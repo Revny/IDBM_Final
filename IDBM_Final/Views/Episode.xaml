@@ -25,14 +25,14 @@
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Title ID" Width="80" DisplayMemberBinding="{Binding Title.TitleId}"/>
-                    <GridViewColumn Header="TitleName" Width="80" DisplayMemberBinding="{Binding Title.OriginalTitle}"/>
+                    <GridViewColumn Header="TitleName" Width="350" DisplayMemberBinding="{Binding Title.OriginalTitle}"/>
                     <GridViewColumn Header="EpisodeNumber" Width="350" DisplayMemberBinding="{Binding EpisodeNumber}"/>
                     <GridViewColumn Header="SeasonNumber" Width="80" DisplayMemberBinding="{Binding SeasonNumber}"/>
                 </GridView>
             </ListView.View>
         </ListView>
         <StackPanel Grid.Row="2" Orientation="Horizontal">
-            <TextBlock Text="Matching Tracks: "/>
+            <TextBlock Text="Total Episodes: "/>
             <TextBlock Text="{Binding TotalEpisodes}"/>
         </StackPanel>
 

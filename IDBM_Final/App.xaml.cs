@@ -42,6 +42,7 @@ namespace IDBM_Final
             options.UseSqlServer(ConfigurationManager.ConnectionStrings["IMDBconn"].ConnectionString));
             services.AddSingleton<HomeViewModel>();
             services.AddSingleton<EpisodeViewModel>();
+            services.AddSingleton<TitleViewModel>();
 
             services.AddSingleton<MainViewModel>();
 

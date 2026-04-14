@@ -12,6 +12,7 @@
             <ToolBar>
                 <Button Content="Home" Command="{Binding NavToHomeCommand}"/>
                 <Button Content="Episodes" Command="{Binding NavToEpisodeCommand}"/>
+                <Button Content="Titles" Command="{Binding NavToTitleCommand}"/>
             </ToolBar>
             <ContentControl Content="{Binding CurrentViewModel}" />
         </StackPanel>

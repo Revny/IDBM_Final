@@ -15,6 +15,10 @@
             <DataTemplate DataType = "{x:Type vm:EpisodeViewModel}">
                 <Views:Episode/>
             </DataTemplate>
+
+            <DataTemplate DataType = "{x:Type vm:TitleViewModel}">
+                <Views:Title/>
+            </DataTemplate>
         </ResourceDictionary>
 
 

@@ -37,6 +37,7 @@ namespace IDBM_Final.ViewModels
 
         public ICommand NavToHomeCommand => new RelayCommand(_ => _navigationService.NavigateTo<HomeViewModel>());
         public ICommand NavToEpisodeCommand => new RelayCommand(_ => _navigationService.NavigateTo<EpisodeViewModel>());
+        public ICommand NavToTitleCommand => new RelayCommand(_ => _navigationService.NavigateTo<TitleViewModel>());
 
 
         private void OnPropertyChanged(string propertyName)
