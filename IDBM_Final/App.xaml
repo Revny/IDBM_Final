@@ -2,8 +2,21 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:IDBM_Final"
-             StartupUri="MainWindow.xaml">
+             xmlns:vm="clr-namespace:IDBM_Final.ViewModels"
+             xmlns:Views="clr-namespace:IDBM_Final.Views"
+             Startup="Application_Startup">
+    
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <DataTemplate DataType = "{x:Type vm:HomeViewModel}">
+                <Views:Home/>
+            </DataTemplate>
+
+            <DataTemplate DataType = "{x:Type vm:EpisodeViewModel}">
+                <Views:Episode/>
+            </DataTemplate>
+        </ResourceDictionary>
+
+
     </Application.Resources>
 </Application>
